@@ -1,0 +1,34 @@
+# W-Fox 🦊 Language
+## Chapter 1: Arithmetic & Strings
+
+### 1.1 Variable Assignment
+Variables are declared and assigned using the `Put` keyword, followed by the identifier enclosed in double quotes, an assignment operator (`=`), and the value.
+
+```wfox
+Put 'price'= 60, print ['price'];
+
+### 1.2 String Assignment & Output
+Strings are declared using the `Put` keyword and outputted in a single line using the `print` function.
+
+```wfox
+Put 'message' = "Hello W-Fox", print ['message'];
+
+### 1.3 Arithmetic Operators
+W-Fox uses custom operators for basic arithmetic operations. The supported operators are:
+
+* `&` : Addition
+* `-` : Subtraction
+* `^` : Multiplication
+* `\` : Division
+
+```wfox
+Put 'result' = 10 & 5, print ['result'];
+Put 'result' = 20 - 4, print ['result'];
+Put 'result' = 6 ^ 3, print ['result'];
+Put 'result' = 50 \ 2, print ['result'];
+
+### 1.4 Complex Arithmetic Expressions
+You can combine multiple custom operators within a single assignment statement to evaluate complex expressions.
+
+```wfox
+Put 'total' = 10 & 5 ^ 2 - 20 \ 4, print ['total'];
