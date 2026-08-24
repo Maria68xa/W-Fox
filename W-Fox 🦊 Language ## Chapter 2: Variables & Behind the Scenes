@@ -1,0 +1,54 @@
+# W-Fox 🦊 Language
+## Chapter 2: Variables & Behind the Scenes
+
+### 2.1 What is a Variable in W-Fox?
+In W-Fox, a variable acts as a dedicated storage container in memory, identified by a specific name (enclosed in single quotes), used to hold data values such as numbers or strings for later retrieval and manipulation.
+
+### 2.2 How the Interpreter Works Behind the Scenes
+When a line of code like `Put 'price' = 60, print ['price'];` is executed, the W-Fox interpreter processes it through the following internal phases:
+
+1. **Tokenization (Lexical Analysis):** 
+   The interpreter scans the input string and breaks it down into distinct components, recognizing keywords (`Put`, `print`), identifiers (`'price'`), operators (`=`), and values (`60`).
+
+2. **Memory Allocation (The Symbol Table):** 
+   Internally, the interpreter maintains a dynamic key-value storage structure (such as a dictionary). When the `Put` command is executed, it maps the variable name to its assigned value:
+   ```python
+   memory['price'] = 60
+### 2.4 Detailed Token-by-Token Parsing Analysis
+To understand how the W-Fox interpreter reads and executes a command, let's examine a complete line of code broken down token by token:
+
+```wfox
+Put 'price' = 60, print ['price'];
+
+The interpreter reads this line sequentially from left to right, parsing each element as follows:
+
+Put (The Keyword):
+
+How the interpreter reads it: The lexer/parser identifies Put as a reserved command instruction. This signals to the interpreter that a new variable definition or assignment process is beginning.
+price' (The Identifier / Variable Name):
+
+How the interpreter reads it: Enclosed within single quotes, this token is extracted as the key name. The interpreter allocates this key inside its internal memory structure (symbol table) so it can reference it later.
+
+= (The Assignment Operator):
+
+How the interpreter reads it: This symbol acts as the separator and directive instructing the interpreter to take the evaluated value on the right side and bind it to the key on the left side.
+
+60 (The Value / Operand):
+
+How the interpreter reads it: Evaluated as a literal number data type. The interpreter stores this specific value into the memory slot mapped to 'price'.
+
+, (The Command Separator):
+
+How the interpreter reads it: The comma tells the parser that the current instruction has ended and a sequential, independent command is about to follow on the exact same line.
+
+print (The Output Keyword):
+
+How the interpreter reads it: Recognized as a built-in function directive, commanding the interpreter to output a value to the console or standard output stream.
+
+['price'] (The Reference Target):
+
+How the interpreter reads it: Enclosed in square brackets and single quotes, this tells the interpreter to look up the key 'price' inside its internal memory, retrieve its stored value (60), and pass it directly to the print function for display.
+
+; (The Statement Terminator):
+
+How the interpreter reads it: Marks the absolute end of the execution statement line, allowing the interpreter to finish execution or move on to the next line of code.
