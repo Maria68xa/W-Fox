@@ -1,0 +1,8 @@
+# مثال 3: تعبيرات معقدة
+# Complex Expressions Example
+
+# تعبير معقد
+Put 'total' = 10 & 5 ^ 2 - 20 \ 4, print ['total'];
+
+# حفظ النتيجة واستخدامها
+Put 'result' = 100 - 30, print ['result'];
