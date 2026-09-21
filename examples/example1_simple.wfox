@@ -1,0 +1,5 @@
+# مثال 1: متغيرات بسيطة
+# Simple Variables Example
+
+Put 'price'= 60, print ['price'];
+Put 'message' = "Hello W-Fox", print ['message'];

@@ -1,0 +1,14 @@
+# مثال 2: العمليات الحسابية
+# Arithmetic Operations Example
+
+# جمع (Addition)
+Put 'sum' = 10 & 5, print ['sum'];
+
+# طرح (Subtraction)
+Put 'diff' = 20 - 4, print ['diff'];
+
+# ضرب (Multiplication)
+Put 'product' = 6 ^ 3, print ['product'];
+
+# قسمة (Division)
+Put 'quotient' = 50 \ 2, print ['quotient'];
