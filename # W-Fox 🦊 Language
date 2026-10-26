@@ -1,0 +1,9 @@
+''' W-Fox
+## Chapter 4: Loops & Repetition
+
+### 4.1 Automated Repetition: `repet`
+Repetition allows statements to execute multiple times based on a specific condition. W-Fox features a smart repetition mechanism using the `repet` keyword, which automatically evaluates and outputs values during each iteration without requiring a manual `print` statement.
+
+```wfox
+
+Put 'y' = 3, repet ['y'] > 0;
