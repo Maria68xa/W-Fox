@@ -1,0 +1,11 @@
+'''W-fox 
+##chapter 3 : Conditions
+### 3.1 Conditional Execution: `in the event that`
+Conditions are declared using the `in the event that` keyword, followed by the variable reference enclosed in square brackets and single quotes, the comparison operator, the value, and the code block.
+
+Put 'health' = 0, in the event that ['health'] == 0 { print ['Game Over']; },
+
+### 3.2 Academic & Scientific Conditions
+Scientific and academic conditions for mathematics and physics are evaluated using the same event structure.
+
+put 'countdown' = 3; as long as ['countdown'] > 0 《print ['countdown'],
